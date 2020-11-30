@@ -42,8 +42,7 @@ def get_movie_rating(dic_OMDB):
             return RottenTomatoes_Rating
          else:
             continue
-    
-    
+   
     return 0
      
         
