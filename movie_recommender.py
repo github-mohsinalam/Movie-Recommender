@@ -1,3 +1,8 @@
+# THIS CODE WILL WORK ONLY IN FULL PYTHON ENVIRONMENT.
+#FOR CODE ,WHICH WILL WORK IN RUNESTONE ENVIRONMENT SEE movie_recomm_runestone.py
+
+
+
 import requests
 import json
 import re
