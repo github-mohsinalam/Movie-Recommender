@@ -34,14 +34,18 @@ def get_movie_data(movie):
     
 
 def get_movie_rating(dic_OMDB):
-    if len(dic_OMDB['Ratings']) > 1:
-        RottenTomatoes_Rating = dic_OMDB['Ratings'][1]['Value']
-        RottenTomatoes_Rating = re.findall('([0-9.]+)', RottenTomatoes_Rating)   #it will return a list ,like ['94']
-        RottenTomatoes_Rating = int(RottenTomatoes_Rating[0])
-        return RottenTomatoes_Rating
-    else :
-        return 0
-        
+    for ratings in dic_OMDB['Ratings']:
+         if ratings['Source'] == 'Rotten Tomatoes':
+            RottenTomatoes_Rating = ratings['Value']
+            RottenTomatoes_Rating = re.findall('([0-9.]+)', RottenTomatoes_Rating)   #it will return a list ,like ['94']
+            RottenTomatoes_Rating = int(RottenTomatoes_Rating[0])
+            return RottenTomatoes_Rating
+         else:
+            continue
+    
+    
+    return 0
+     
         
  def get_sorted_recommendations(lst_of_movies):
     movie_Rating_dict = {}
