@@ -14,7 +14,7 @@ You will put those two together. You will use TasteDive to get related movies fo
  2. **get_related_titles(lst_of_movie):**
       lst_of_movie is a list of movies.The function returns a list of movies related to all the movies in lst_of_movie
  3. **get_movie_data(movie):** 
-       movie, is a string, representing a movie name.The function return a dictionary ,which contains all the data about movie.
+       movie, is a string, representing a movie name.The function return a dictionary ,which contains all the data about movie.   
  4 . **get_movie_rating(dic_OMDB):**
        dic_OMDB is a dictionary containing information about any movie.The function returns Rotten Tomatoes' rating of the movie as a integer.
  5. **get_sorted_recommendations(lst_of_movies):**
