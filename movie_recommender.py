@@ -62,7 +62,7 @@ def get_movie_rating(dic_OMDB):
     return sorted_recommendtion 
         
         
-   print(get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"]))
+   print(get_sorted_recommendations(["Bridesmaids", "Sherlock Holmes"]))    #Run this to check 
     
    
 
